@@ -1,0 +1,213 @@
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    font-size: 62.5%;
+    --main-color: #121214;
+    --design-color: #037E8C;
+    --additional-color: white;
+    --bottom-text-color: #787878;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    line-height: 120%;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.button-link {
+  color: var(--design-color);
+  border-radius: 0.9rem;
+  border: 0.15rem solid var(--design-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.inversion-button {
+  background-color: var(--design-color);
+  color: var(--additional-color);
+  border-radius: 0.9rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.main-section {
+    background-color: var(--main-color);
+    color: var(--additional-color);
+}
+
+.our-route {
+  line-height: 160%;
+}
+
+.route-test {
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--additional-color);
+}
+
+.section-name-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.serificate {
+  background-color: #373737;
+  color: var(--additional-color);
+}
+
+.scroll-text {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.small-add-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.big-add-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.scroll-name {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.adv-heads {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.route-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.route-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+span {
+  font-weight: 600;
+}
+
+.team-names {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--design-color);
+}
+
+.discount {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--design-color);
+}
+
+.discount-add-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--design-color);
+}
+
+.gift-add-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--design-color);
+  text-align: center;
+}
+
+.serificate-header {
+  font-size: 3.0rem;
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.serificate-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--additional-color);
+}
+
+.question-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.question-answ {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.have-question {
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+
+.write-us {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.footer-list {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.gift .small-add-text {
+  line-height: 150%;
+}
+
+.contacts .big-add-text {
+  line-height: 130%;
+}
