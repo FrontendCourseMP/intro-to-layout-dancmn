@@ -51,12 +51,35 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     color: var(--main-color);
-    line-height: 120%;
+}
+
+header {
+  position: absolute;
+  width: 100%;
 }
 
 a {
   color: var(--main-color);
   text-decoration: none;
+}
+
+h1 {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.main-section .wrapper {
+  padding-inline: 2em;  
+  padding-top: 12em;
+}
+
+.main-section h2 {
+  display: none;
 }
 
 .button-link {
@@ -104,6 +127,8 @@ a {
 .scroll-text {
     font-size: 3.6rem;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 .small-add-text {
@@ -210,4 +235,21 @@ span {
 
 .contacts .big-add-text {
   line-height: 130%;
+}
+
+.service-terms .small-add-text {
+  line-height: 120%;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--bottom-text-color);
+}
+
+.btn {
+  background-color: var(--design-color);
+  color: var(--additional-color);
+  border-radius: 9px;
+  border: none;
 }
