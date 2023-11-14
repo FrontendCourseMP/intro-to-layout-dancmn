@@ -45,6 +45,7 @@
     --design-color: #037E8C;
     --additional-color: white;
     --bottom-text-color: #787878;
+    --our-route-color: #F4F4F4;
 }
 
 body {
@@ -63,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+hr {
+  max-width: 54px;
+}
+
 h1 {
   display: none;
 }
@@ -75,11 +80,16 @@ h1 {
 
 .main-section .wrapper {
   padding-inline: 2em;  
-  padding-top: 12em;
+  padding-top: 16.8rem;
+  padding-bottom: 7.7rem;
 }
 
 .main-section h2 {
   display: none;
+}
+
+.btn-group {
+  margin-bottom: 4.2rem;
 }
 
 .button-link {
@@ -88,6 +98,9 @@ h1 {
   border: 0.15rem solid var(--design-color);
   font-size: 1.4rem;
   font-weight: 600;
+  padding-inline: 2.2em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
 }
 
 .inversion-button {
@@ -103,10 +116,6 @@ h1 {
     color: var(--additional-color);
 }
 
-.our-route {
-  line-height: 160%;
-}
-
 .route-test {
   text-align: center;
   background-color: var(--main-color);
@@ -119,16 +128,12 @@ h1 {
   text-align: center;
 }
 
-.serificate {
-  background-color: #373737;
-  color: var(--additional-color);
-}
-
 .scroll-text {
     font-size: 3.6rem;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0.5em;
+    letter-spacing: 1.08px;
 }
 
 .small-add-text {
@@ -154,6 +159,7 @@ h1 {
 .route-name {
   font-size: 2.4rem;
   font-weight: 600;
+  margin-bottom: .6rem;
 }
 
 .route-price {
@@ -171,16 +177,198 @@ span {
   color: var(--design-color);
 }
 
+.btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: var(--design-color);
+  color: var(--additional-color);
+  border-radius: 9px;
+  border: none;
+  padding: 16px;
+  padding-bottom: 14px;
+}
+
+.main-section .btn {
+  margin-bottom: 11rem;
+}
+
+.main-section .big-add-text {
+  margin-bottom: 2.5em;
+}
+
+.adv-section h2 {
+  display: none;
+}
+
+.adv-section .wrapper {
+  padding-top: 3.0rem;
+  padding-bottom: 4.4rem;
+}
+
+.our-route {
+  background-color: var(--our-route-color);
+}
+
+.our-route .wrapper {
+  padding-top: 3.5rem;
+  padding-bottom: 4.6rem;
+}
+
+.our-route .section-name-text {
+  margin-top: 0;
+  margin-bottom: 3.6rem;
+}
+
+.route-price {
+  margin-top: 0;
+}
+
+.route-stats {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: .7rem;
+}
+
+.our-route h4 {
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.our-route .btn {
+  padding-inline: 1.8em;
+  padding-top: 0.9em;
+  padding-bottom: 0.8em;
+}
+
+.our-route .small-add-text {
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: 2.8rem;
+}
+
+.route-test h2 {
+  margin-top: 0;
+}
+
+.route-test.wrapper {
+  padding-top: 4.5rem;
+  padding-bottom: 5.0rem;
+}
+
+.route-test .big-add-text {
+  margin-top: 0;
+  margin-bottom: 3.3rem;
+}
+
+.route-test .inversion-button {
+  padding-inline: 3em;
+  padding-top: 1.1em;
+  padding-bottom: 1em;
+}
+
+.our-team .wrapper {
+  padding-top: 9.5rem;
+  padding-bottom: 5.0rem;
+}
+
+.team-card {
+  background-color: var(--our-route-color);
+  border-radius: 9px;
+  padding-bottom: .9rem;
+}
+
+.team-card p {
+  margin: 0;
+  margin-inline: 13px;
+}
+
+.service-terms {
+  background-color: var(--our-route-color);
+}
+
+.service-terms .small-add-text {
+  line-height: 120%;
+}
+
+.service-terms .section-name-text {
+  margin-top: 0;
+}
+
+.service-terms .wrapper {
+  padding-top: 4.5rem;
+  padding-bottom: 4.0rem;
+}
+
+.service-terms li {
+  background-color: var(--additional-color);
+  border-radius: 9px;
+  padding-inline: 0.6em;
+  min-height: 91px;
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+
+.discount-section .wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 6.0rem;
+}
+
+.discount-section h2 {
+  margin-top: 0;
+  margin-bottom: 2.7rem;
+}
+
+.discount-card {
+  background-color: var(--our-route-color);
+  border-radius: 9px;
+  padding-bottom: 2.2rem;
+  padding-left: 2.2rem;
+  padding-right: 3.7rem;
+  margin-bottom: 1.4rem;
+}
+
 .discount {
   font-size: 2.4rem;
   font-weight: 800;
   color: var(--design-color);
 }
 
+.discount-card .discount {
+  margin-bottom: 3px;
+}
+
 .discount-add-text {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--design-color);
+  margin-top: .5rem;
+  margin-bottom: .9rem;
+}
+
+.discount-card .big-add-text {
+  margin-top: 0;
+  font-weight: 400;
+  margin-bottom: .9rem;
+}
+
+.discount-card .button-link {
+  display: inline-block;
+}
+
+.gift {
+  background-color: var(--our-route-color);
+}
+
+.gift .wrapper {
+  padding-top: 3.6rem;
+  padding-bottom: 4.6rem;
+}
+
+.gift .section-name-text {
+  margin-top: 0;
+  margin-bottom: .7rem;
 }
 
 .gift-add-text {
@@ -188,18 +376,70 @@ span {
   font-weight: 500;
   color: var(--design-color);
   text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.serificate {
+  background-color: var(--main-color);
+  color: var(--additional-color);
+  border-radius: 9px;
+  padding-block: 2rem;
+  padding-left: 2.2rem;
+  padding-right: 9.4rem;  
+  margin-bottom: 2.4rem;
+  max-width: 550px;
 }
 
 .serificate-header {
   font-size: 3.0rem;
   font-weight: 900;
-  color: var(--main-color);
+  color: var(--additional-color);
+  margin-top: 0;
+  margin-bottom: 3.1rem;
 }
 
 .serificate-name {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--additional-color);
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  line-height: 124%;
+}
+
+.gift .small-add-text {
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+}
+
+.serificate .small-add-text {
+  line-height: 130%;
+  margin: 0;
+}
+
+.gift .button-link {
+  display: inline-block;
+}
+
+.question-section h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.question-section .wrapper {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+details {
+  padding-left: 0.8em;
+  padding-top: 1.1em;
+  padding-bottom: 1em;
+  border: .5px solid var(--bottom-text-color);
+  border-radius: 2px;
+  margin-bottom: .8rem;
+  text-align: left;
 }
 
 .question-name {
@@ -216,6 +456,42 @@ span {
 .have-question {
   font-size: 2.0rem;
   font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+
+.question-section .small-add-text {
+  text-align: center;
+}
+
+.question-section .inversion-button {
+  display: inline-block;
+  padding-inline: 2em;
+  padding-top: 0.9em;
+  padding-bottom: 0.8em;
+  margin-bottom: 6rem;
+}
+
+.question-section hr {
+  max-width: 100%;
+  border: 2px solid var(--design-color);
+  margin: 0;
+}
+
+.contacts .wrapper {
+  padding-top: .95rem;
+  padding-bottom: 3rem;
+}
+
+.contacts h2 {
+  margin-top: 0;
+  margin-bottom: 1.7rem;
+  text-align: left;
+}
+
+.contacts li {
+  margin-bottom: 1.5rem;
 }
 
 .write-us {
@@ -229,16 +505,8 @@ span {
   line-height: 160%;
 }
 
-.gift .small-add-text {
-  line-height: 150%;
-}
-
 .contacts .big-add-text {
   line-height: 130%;
-}
-
-.service-terms .small-add-text {
-  line-height: 120%;
 }
 
 .footer-text {
@@ -247,9 +515,12 @@ span {
   color: var(--bottom-text-color);
 }
 
-.btn {
-  background-color: var(--design-color);
-  color: var(--additional-color);
-  border-radius: 9px;
-  border: none;
+footer hr {
+  max-width: 100%;
+  border: 1px solid var(--main-color);
+  margin-top: 0;
+}
+
+footer ul {
+  padding-left: 17.8rem;
 }
