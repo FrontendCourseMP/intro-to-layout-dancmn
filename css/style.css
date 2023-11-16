@@ -524,3 +524,8 @@ footer hr {
 footer ul {
   padding-left: 17.8rem;
 }
+
+.circle {
+  width: 8px;
+  height: 8px;
+}
