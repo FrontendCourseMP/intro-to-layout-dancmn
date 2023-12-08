@@ -10,8 +10,27 @@
 <body>
     <header>
         <div class="wrapper">
-            <a href="#"><img src="img/logo.png" alt="На главную"></a>
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/logo-big.png">
+                    <img src="img/logo.png" alt="На главную">
+                </picture>
+            </a>
             <button type="button"><img src="img/burger-icon.svg" alt=""></button>
+            <div class="header-right">
+                <nav class="navbar">
+                    <a href="#">МАРШРУТЫ</a>
+                    <a href="#">ГАЛЕРЕЯ</a>
+                    <a href="#">ВОПРОС-ОТВЕТ</a>
+                    <a href="#">КОНТАКТЫ</a>
+                    <a href="#">ЗАБРОНИРОВАТЬ</a>
+                </nav>
+                <div class="phone">
+                    <img src="img/phone.svg" alt="">
+                    <a href="#" class="header-phone">+7 928 333 26 45</a>
+                </div>
+                <a href="#" class="btn">Перезвоните мне</a>
+            </div>
         </div>
     </header>
     <main>
@@ -64,62 +83,122 @@
         <section class="our-route">
             <div class="wrapper">
                 <h2 class="section-name-text">Наши маршруты</h2>
-                <h3 class="route-name">БАЗОВЫЙ</h3>
-                <p class="route-price">от 4000 ₽</p>
-                <p class="route-stats"><img src="img/clock-icon.svg" alt="">ВРЕМЯ В ПУТИ: <span>1,5 - 2 часа</span></p>
-                <p class="route-stats"><img src="img/map-icon.svg" alt="">РАССТОЯНИЕ: <span>20 - 25 км</span></p>
-                <p class="route-stats"><img src="img/star-icon.svg" alt="">СЛОЖНОСТЬ: <span>5***</span></p>
-                <h4>МАРШРУТ <img src="img/route-icon.svg" alt=""></h4>
-                <p class="small-add-text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - Форсаж</p>
-                <div class="btn-group">
-                    <a href="#" class="button-link">Подробнее</a>
-                    <button type="button" class="btn">Забронировать</button>
+                <div class="route-flex">
+                    <hr class="route-hr">
+                    <div class="route-left-side">
+                        <h3 class="route-name">БАЗОВЫЙ</h3>
+                        <p class="route-price">от 4000 ₽</p>
+                        <p class="route-stats"><img src="img/clock-icon.svg" alt="">ВРЕМЯ В ПУТИ: <span>1,5 - 2 часа</span></p>
+                        <p class="route-stats"><img src="img/map-icon.svg" alt="">РАССТОЯНИЕ: <span>20 - 25 км</span></p>
+                        <p class="route-stats"><img src="img/star-icon.svg" alt="">СЛОЖНОСТЬ: <span>5***</span></p>
+                        <h4>МАРШРУТ <img src="img/route-icon.svg" alt=""></h4>
+                        <p class="small-add-text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - Форсаж</p>
+                        <div class="btn-group">
+                            <a href="#" class="button-link">Подробнее</a>
+                            <button type="button" class="btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="route-right-side">
+                        <div class="img-wrap">
+                            <picture class="route-img">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-1-big.png" class="route-img">
+                                <img src="img/route-img-1.jpg" alt="" class="route-img">
+                            </picture>
+                            <picture class="route-img2">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-2-big.png" class="route-img2">
+                                <img src="img/route-img-2.jpg" alt="" class="route-img2">
+                            </picture>
+                            <picture class="route-img2">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-3-big.png" class="route-img2">
+                                <img src="img/route-img-3.jpg" alt="" class="route-img2">
+                            </picture>
+                        </div>
+                        <div class="scroll-group">
+                            <button class="circle"></button>
+                            <button class="circle"></button>
+                            <button class="circle"></button>
+                            <hr>
+                            <p class="scroll-name">scroll</p>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/route-img-1.jpg" alt="" class="route-img"><img src="img/route-img-2.jpg" alt="" class="route-img"><img src="img/route-img-3.jpg" alt="" class="route-img">
-                <div class="scroll-group">
-                    <button class="circle"></button>
-                    <button class="circle"></button>
-                    <button class="circle"></button>
-                    <hr>
-                    <p class="scroll-name">scroll</p>
+                <div class="route-flex">
+                    <hr class="route-hr">
+                    <div class="route-left-side">
+                        <h3 class="route-name">РАСШИРЕННЫЙ</h3>
+                        <p class="route-price">от 16000 ₽</p>
+                        <p class="route-stats"><img src="img/clock-icon.svg" alt="">ВРЕМЯ В ПУТИ: <span>6 - 8 часов</span></p>
+                        <p class="route-stats"><img src="img/map-icon.svg" alt="">РАССТОЯНИЕ: <span>60 - 70 км</span></p>
+                        <p class="route-stats"><img src="img/star-icon.svg" alt="">СЛОЖНОСТЬ: <span>5***</span></p>
+                        <h4>МАРШРУТ <img src="img/route-icon.svg" alt=""></h4>
+                        <p class="small-add-text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - Форсаж</p>
+                        <div class="btn-group">
+                            <a href="#" class="button-link">Подробнее</a>
+                            <button type="button" class="btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="route-right-side">
+                        <div class="img-wrap">
+                            <picture class="route-img">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-4-big.png" class="route-img">
+                                <img src="img/route-img-4.jpg" alt="" class="route-img">
+                            </picture>
+                            <picture class="route-img2">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-5-big.png" class="route-img2">
+                                <img src="img/route-img-5.jpg" alt="" class="route-img2">
+                            </picture>
+                            <picture class="route-img2">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-6-big.png" class="route-img2">
+                                <img src="img/route-img-6.jpg" alt="" class="route-img2">
+                            </picture>
+                        </div>
+                        <div class="scroll-group">
+                            <button class="circle"></button>
+                            <button class="circle"></button>
+                            <button class="circle"></button>
+                            <hr>
+                            <p class="scroll-name">scroll</p>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="route-name">РАСШИРЕННЫЙ</h3>
-                <p class="route-price">от 16000 ₽</p>
-                <p class="route-stats"><img src="img/clock-icon.svg" alt="">ВРЕМЯ В ПУТИ: <span>6 - 8 часов</span></p>
-                <p class="route-stats"><img src="img/map-icon.svg" alt="">РАССТОЯНИЕ: <span>60 - 70 км</span></p>
-                <p class="route-stats"><img src="img/star-icon.svg" alt="">СЛОЖНОСТЬ: <span>5***</span></p>
-                <h4>МАРШРУТ <img src="img/route-icon.svg" alt=""></h4>
-                <p class="small-add-text">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - Форсаж</p>
-                <div class="btn-group">
-                    <a href="#" class="button-link">Подробнее</a>
-                    <button type="button" class="btn">Забронировать</button>
-                </div>
-                <img src="img/route-img-4.jpg" alt="" class="route-img"><img src="img/route-img-5.jpg" alt="" class="route-img"><img src="img/route-img-6.jpg" alt="" class="route-img">
-                <div class="scroll-group">
-                    <button class="circle"></button>
-                    <button class="circle"></button>
-                    <button class="circle"></button>
-                    <hr>
-                    <p class="scroll-name">scroll</p>
-                </div>
-                <h3 class="route-name">EXPIRIENCE</h3>
-                <p class="route-price">от 7000 ₽</p>
-                <p class="route-stats"><img src="img/clock-icon.svg" alt="">ВРЕМЯ В ПУТИ: <span>4 часа</span></p>
-                <p class="route-stats"><img src="img/map-icon.svg" alt="">РАССТОЯНИЕ: <span>40 - 50 км</span></p>
-                <p class="route-stats"><img src="img/star-icon.svg" alt="">СЛОЖНОСТЬ: <span>5***</span></p>
-                <h4>МАРШРУТ <img src="img/route-icon.svg" alt=""></h4>
-                <p class="small-add-text">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж</p>
-                <div class="btn-group">
-                    <a href="#" class="button-link">Подробнее</a>
-                    <button type="button" class="btn">Забронировать</button>
-                </div>
-                <img src="img/route-img-7.jpg" alt="" class="route-img"><img src="img/route-img-8.jpg" alt="" class="route-img"><img src="img/route-img-9.jpg" alt="" class="route-img">
-                <div class="scroll-group">
-                    <button class="circle"></button>
-                    <button class="circle"></button>
-                    <button class="circle"></button>
-                    <hr>
-                    <p class="scroll-name">scroll</p>
+                <div class="route-flex">
+                    <hr class="route-hr">
+                    <div class="route-left-side">
+                        <h3 class="route-name">EXPIRIENCE</h3>
+                        <p class="route-price">от 7000 ₽</p>
+                        <p class="route-stats"><img src="img/clock-icon.svg" alt="">ВРЕМЯ В ПУТИ: <span>4 часа</span></p>
+                        <p class="route-stats"><img src="img/map-icon.svg" alt="">РАССТОЯНИЕ: <span>40 - 50 км</span></p>
+                        <p class="route-stats"><img src="img/star-icon.svg" alt="">СЛОЖНОСТЬ: <span>5***</span></p>
+                        <h4>МАРШРУТ <img src="img/route-icon.svg" alt=""></h4>
+                        <p class="small-add-text">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж</p>
+                        <div class="btn-group">
+                            <a href="#" class="button-link">Подробнее</a>
+                            <button type="button" class="btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="route-right-side">
+                        <div class="img-wrap">
+                            <picture class="route-img">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-7-big.png" class="route-img">
+                                <img src="img/route-img-7.jpg" alt="" class="route-img">
+                            </picture>
+                            <picture class="route-img2">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-8-big.png" class="route-img2">
+                                <img src="img/route-img-8.jpg" alt="" class="route-img2">
+                            </picture>
+                            <picture class="route-img2">
+                                <source media="(min-width: 1024px)" srcset="img/route-img-9-big.png" class="route-img2">
+                                <img src="img/route-img-9.jpg" alt="" class="route-img2">
+                            </picture>
+                        </div>
+                        <div class="scroll-group">
+                            <button class="circle"></button>
+                            <button class="circle"></button>
+                            <button class="circle"></button>
+                            <hr>
+                            <p class="scroll-name">scroll</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -135,22 +214,34 @@
                 <h2 class="section-name-text">Наша команда</h2>
                 <div class="team-container">
                     <div class="team-card">
-                        <img src="img/team-img-1.jpg" alt="">
+                        <picture class="card-img">
+                            <source media="(min-width: 1440px)" srcset="img/team-img-1-big.png" class="card-img">
+                            <img src="img/team-img-1.jpg" alt="" class="card-img">
+                        </picture>
                         <p class="team-names">Юлиана</p>
                         <p class="small-add-text">руководитель</p>
                     </div>
                     <div class="team-card">
-                        <img src="img/team-img-2.jpg" alt="">
+                        <picture class="card-img">
+                            <source media="(min-width: 1440px)" srcset="img/team-img-2-big.png" class="card-img">
+                            <img src="img/team-img-2.jpg" alt="" class="card-img">
+                        </picture>
                         <p class="team-names">Максим</p>
                         <p class="small-add-text">старший инструктор</p>
                     </div>
                     <div class="team-card">
-                        <img src="img/team-img-3.jpg" alt="">
+                        <picture class="card-img">
+                            <source media="(min-width: 1440px)" srcset="img/team-img-3-big.png" class="card-img">
+                            <img src="img/team-img-3.jpg" alt="" class="card-img">
+                        </picture>
                         <p class="team-names">Кристина</p>
                         <p class="small-add-text">администратор</p>
                     </div>
                     <div class="team-card">
-                        <img src="img/team-img-4.jpg" alt="">
+                        <picture class="card-img">
+                            <source media="(min-width: 1440px)" srcset="img/team-img-4-big.png" class="card-img">
+                            <img src="img/team-img-4.jpg" alt="" class="card-img">
+                        </picture>
                         <p class="team-names">Юрий</p>
                         <p class="small-add-text">старший механик</p>
                     </div>
@@ -193,23 +284,25 @@
         <section class="discount-section">
             <div class="wrapper">
                 <h2 class="section-name-text">Спецпредложения</h2>
-                <div class="discount-card">
-                    <img src="img/gift-img.jpg" alt="">
-                    <div class="discount-container">
-                        <p class="discount">Скидка 10%</p>
-                        <p class="discount-add-text">На день рождение</p>
-                        <p class="big-add-text">в честь Дня Рождения - дарим имениннику скидку 10%</p>
+                <div class="discount-flex">
+                    <div class="discount-card">
+                        <img src="img/gift-img.jpg" alt="">
+                        <div class="discount-container">
+                            <p class="discount">Скидка 10%</p>
+                            <p class="discount-add-text">На день рождение</p>
+                            <p class="big-add-text">в честь Дня Рождения - дарим имениннику скидку 10%</p>
+                        </div>
+                        <img src="img/bg-vector.svg" alt="" class="bg-img">
                     </div>
-                    <img src="img/bg-vector.svg" alt="" class="bg-img">
-                </div>
-                <div class="discount-card">
-                    <img src="img/house-img.png" alt="">
-                    <div class="discount-container">
-                        <p class="discount">Скидка 10%</p>
-                        <p class="big-add-text">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
-                        <div class="button-div"><a href="#" class="button-link">Подробнее</a></div>
+                    <div class="discount-card">
+                        <img src="img/house-img.jpg" alt="">
+                        <div class="discount-container">
+                            <p class="discount">Скидка 10%</p>
+                            <p class="big-add-text">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
+                            <div class="button-div"><a href="#" class="button-link">Подробнее</a></div>
+                        </div>
+                        <img src="img/bg-vector.svg" alt="" class="bg-img">
                     </div>
-                    <img src="img/bg-vector.svg" alt="" class="bg-img">
                 </div>
             </div>
         </section>
@@ -218,41 +311,50 @@
             <div class="wrapper">
                 <h2 class="section-name-text">Подарочный сертификат</h2>
                 <p class="gift-add-text">Хотите сделать оригинальный подарок? Подарите незабываемые эмоции - лучший подарок!</p>
-                <div class="serificate">
-                    <img src="" alt="">
-                    <p class="serificate-header">СЕРТИФИКАТ</p>
-                    <p class="serificate-name">Катание на квадроциклах</p>
-                    <p class="small-add-text">Маршрут: Лесная прогулка</p>
-                    <img src="img/serificate-vector.svg" alt="" class="serificate-vector">
+                <div class="gift-flex">
+                    <div class="serificate">
+                        <p class="serificate-header">СЕРТИФИКАТ</p>
+                        <p class="serificate-name">Катание на квадроциклах</p>
+                        <p class="small-add-text">Маршрут: Лесная прогулка</p>
+                        <img src="img/serificate-vector.svg" alt="" class="serificate-vector">
+                    </div>
+                    <div class="gift-side">
+                        <p class="small-add-text">Хотите удивить своих близких оригинальным подарком? Подарочный сертификат на экскурсию на квадроциклах станет не просто интересным подарком, но и реальной возможностью приблизить Ваших друзей и близких к новому увлечению.</p>
+                        <a href="#" class="button-link">Подберем сертификат для вас</a>
+                    </div>
                 </div>
-                <p class="small-add-text">Хотите удивить своих близких оригинальным подарком? Подарочный сертификат на экскурсию на квадроциклах станет не просто интересным подарком, но и реальной возможностью приблизить Ваших друзей и близких к новому увлечению.</p>
-                <a href="#" class="button-link">Подберем сертификат для вас</a>
             </div>
         </section>
 
         <section class="question-section">
             <div class="wrapper">
                 <h2 class="section-name-text">Вопросы-ответы</h2>
-                <details>
-                    <summary class="question-name">Актуальный вопрос?</summary>
-                    <p class="question-answ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel architecto ipsa itaque deleniti doloribus culpa.</p>
-                </details>
-                <details>
-                    <summary class="question-name">Актуальный вопрос?</summary>
-                    <p class="question-answ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio, et placeat voluptatibus non iusto facilis pariatur iure.</p>
-                </details>
-                <details>
-                    <summary class="question-name">Актуальный вопрос?</summary>
-                    <p class="question-answ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque eos nemo.</p>
-                </details>
-                <details>
-                    <summary class="question-name">Актуальный вопрос?</summary>
-                    <p class="question-answ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum maxime, aperiam illo recusandae deserunt est. Nihil, dolorum id! Perspiciatis, libero.</p>
-                </details>
-                <img src="img/question-icon.svg" alt="">
-                <h3 class="have-question">Есть вопросы?</h3>
-                <p class="small-add-text">Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы, предложения или идеи для сотрудничества</p>
-                <a href="#" class="inversion-button">Задать вопрос</a>
+                <div class="question-flex">
+                    <div class="question-left-side">
+                        <details>
+                            <summary class="question-name">Актуальный вопрос?</summary>
+                            <p class="question-answ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel architecto ipsa itaque deleniti doloribus culpa.</p>
+                        </details>
+                        <details>
+                            <summary class="question-name">Актуальный вопрос?</summary>
+                            <p class="question-answ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio, et placeat voluptatibus non iusto facilis pariatur iure.</p>
+                        </details>
+                        <details>
+                            <summary class="question-name">Актуальный вопрос?</summary>
+                            <p class="question-answ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque eos nemo.</p>
+                        </details>
+                        <details>
+                            <summary class="question-name">Актуальный вопрос?</summary>
+                            <p class="question-answ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum maxime, aperiam illo recusandae deserunt est. Nihil, dolorum id! Perspiciatis, libero.</p>
+                        </details>
+                    </div>
+                    <div class="question-right-side">
+                        <img src="img/question-icon.svg" alt="">
+                        <h3 class="have-question">Есть вопросы?</h3>
+                        <p class="small-add-text">Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы, предложения или идеи для сотрудничества</p>
+                        <a href="#" class="inversion-button">Задать вопрос</a>
+                    </div>
+                </div>
                 <hr>
             </div>
         </section>
@@ -260,26 +362,34 @@
         <section class="contacts">
             <div class="wrapper">
                 <h2 class="section-name-text">Контакты</h2>
-                <img src="img/map-img.png" alt="" class="map-img">
-                <ul>
-                    <li>
-                        <img src="img/house-icon.svg" alt="">
-                        <p class="big-add-text">Город Геленджик</p>
-                    </li>
-                    <li>
-                        <img src="img/mail-icon.svg" alt="">
-                        <a href="mailto:experience@groupgrand.ru" class="big-add-text">experience@groupgrand.ru</a>
-                    </li>
-                    <li>
-                        <img src="img/phone-icon.svg" alt="">
-                        <a href="tel:+79284280062" class="big-add-text">+7 928 428-00-62</a>
-                    </li>
-                    <li>
-                        <img src="img/time-icon.svg" alt="" class="li-time">
-                        <p class="big-add-text li-time">Пн - Пт: 9:00 - 18:00 <br> Сб: 9:00 - 17:00 <br> Вс - выходной</p>
-                    </li>
-                </ul>
-                <p class="write-us">Написать нам: <a href="#"><img src="img/whatsapp-icon.svg" alt=""></a> <a href="#"><img src="img/instagram-icon.svg" alt=""></a></p>
+                <div class="contacts-flex">
+                    <picture class="map-img">
+                        <source media="(min-width: 768px)" srcset="img/map-img-big.png" class="map-img">
+                        <img src="img/map-img.png" alt="Карта" class="map-img">
+                    </picture>
+                    <div class="contacts-side">
+                        <h2 class="section-name-text">Контакты</h2>
+                        <ul>
+                            <li>
+                                <img src="img/house-icon.svg" alt="">
+                                <p class="big-add-text">Город Геленджик</p>
+                            </li>
+                            <li>
+                                <img src="img/mail-icon.svg" alt="">
+                                <a href="mailto:experience@groupgrand.ru" class="big-add-text">experience@groupgrand.ru</a>
+                            </li>
+                            <li>
+                                <img src="img/phone-icon.svg" alt="">
+                                <a href="tel:+79284280062" class="big-add-text">+7 928 428-00-62</a>
+                            </li>
+                            <li>
+                                <img src="img/time-icon.svg" alt="" class="li-time">
+                                <p class="big-add-text li-time">Пн - Пт: 9:00 - 18:00 <br> Сб: 9:00 - 17:00 <br> Вс - выходной</p>
+                            </li>
+                        </ul>
+                        <p class="write-us">Написать нам: <a href="#"><img src="img/whatsapp-icon.svg" alt=""></a> <a href="#"><img src="img/instagram-icon.svg" alt=""></a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -287,7 +397,9 @@
         <div class="wrapper">
             <hr>
             <div class="footer-section">
-                <a href="#"><img src="img/logo.png" alt=""></a>
+                <a href="#">
+                    <img src="img/logo.png" alt="На главную">
+                </a>
                 <ul class="footer-list">
                     <li><a href="#">МАРШРУТЫ</a></li>
                     <li><a href="#">ГАЛЕРЕЯ</a></li>
@@ -299,6 +411,7 @@
             </div>
             <hr>
             <p class="footer-text">© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</p>
+            <a href="grid.html">Grid HTML</a>
         </div>
     </footer>
 </body>
