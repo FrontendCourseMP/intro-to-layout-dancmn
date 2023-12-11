@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/logo-big.png">
+                    <img src="img/logo.png" alt="На главную">
+                </picture>
+            </a>
+            <button type="button"><img src="img/burger-icon.svg" alt=""></button>
+            <div class="header-right">
+                <nav class="navbar">
+                    <a href="#route">МАРШРУТЫ</a>
+                    <a href="#">ГАЛЕРЕЯ</a>
+                    <a href="#question">ВОПРОС-ОТВЕТ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
+                    <a href="#">ЗАБРОНИРОВАТЬ</a>
+                    <a href="form.html">ФОРМА</a>
+                </nav>
+                <div class="phone">
+                    <img src="img/phone.svg" alt="">
+                    <a href="#" class="header-phone">+7 928 333 26 45</a>
+                </div>
+                <a href="tel:+79283332645" class="btn">Перезвоните мне</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="//httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Личная информация</legend>
+                <ul>
+                    <li>
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="user_name" placeholder="Иван Иванов">
+                    </li>
+                    <li>
+                        <label for="birthday">Дата рождения</label>
+                        <input type="date" id="birthday" name="user_birthday">
+                    </li>
+                    <li>
+                        <label for="">Пол</label>
+                        <input type="radio" name="user_gen" value="Man"> Муж
+                        <input type="radio" name="user_gen" value="Woman"> Жен
+                    </li>
+                    <li>
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" id="password" placeholder="Пароль">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <ul>
+                    <li>
+                        <label for="mail">Email</label>
+                        <input type="email" name="user_mail" id="mail" placeholder="ivanov@mail.ru">
+                    </li>
+                    <li>
+                        <label for="phone">Телефон</label>
+                        <input type="tel" name="user_tel" id="phone" placeholder="+7 (999) 999-99-99">
+                    </li>
+                    <li>
+                        <label for="">Удобное время для связи</label>
+                        <input type="checkbox" name="checked" value="Утро"> Утро
+                        <input type="checkbox" name="checked" value="День"> День
+                        <input type="checkbox" name="checked" value="Вечер"> Вечер
+                        <input type="checkbox" name="checked" value="Ночь"> Ночь
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <hr>
+            <div class="footer-section">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="На главную">
+                </a>
+                <ul class="footer-list">
+                    <li><a href="#route">МАРШРУТЫ</a></li>
+                    <li><a href="#">ГАЛЕРЕЯ</a></li>
+                    <li><a href="#question">ВОПРОС-ОТВЕТ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li><a href="#">УСЛОВИЯ</a></li>
+                    <li><a href="#">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+                </ul>
+            </div>
+            <hr>
+            <p class="footer-text">© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</p>
+            <a href="grid.html">Grid HTML</a>
+        </div>
+    </footer>
+</body>
+</html>

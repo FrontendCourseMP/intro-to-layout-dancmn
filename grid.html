@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <a href="#"><img src="img/logo.png" alt="На главную"></a>
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/logo-big.png">
+                    <img src="img/logo.png" alt="На главную">
+                </picture>
+            </a>
             <button type="button"><img src="img/burger-icon.svg" alt=""></button>
+            <div class="header-right">
+                <nav class="navbar">
+                    <a href="#route">МАРШРУТЫ</a>
+                    <a href="#">ГАЛЕРЕЯ</a>
+                    <a href="#question">ВОПРОС-ОТВЕТ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
+                    <a href="#">ЗАБРОНИРОВАТЬ</a>
+                    <a href="form.html">ФОРМА</a>
+                </nav>
+                <div class="phone">
+                    <img src="img/phone.svg" alt="">
+                    <a href="#" class="header-phone">+7 928 333 26 45</a>
+                </div>
+                <a href="tel:+79283332645" class="btn">Перезвоните мне</a>
+            </div>
         </div>
     </header>
 

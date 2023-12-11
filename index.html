@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="wrapper">
-            <a href="#">
+            <a href="index.html">
                 <picture>
                     <source media="(min-width: 768px)" srcset="img/logo-big.png">
                     <img src="img/logo.png" alt="На главную">
@@ -19,17 +19,18 @@
             <button type="button"><img src="img/burger-icon.svg" alt=""></button>
             <div class="header-right">
                 <nav class="navbar">
-                    <a href="#">МАРШРУТЫ</a>
+                    <a href="#route">МАРШРУТЫ</a>
                     <a href="#">ГАЛЕРЕЯ</a>
-                    <a href="#">ВОПРОС-ОТВЕТ</a>
-                    <a href="#">КОНТАКТЫ</a>
+                    <a href="#question">ВОПРОС-ОТВЕТ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
                     <a href="#">ЗАБРОНИРОВАТЬ</a>
+                    <a href="form.html">ФОРМА</a>
                 </nav>
                 <div class="phone">
                     <img src="img/phone.svg" alt="">
                     <a href="#" class="header-phone">+7 928 333 26 45</a>
                 </div>
-                <a href="#" class="btn">Перезвоните мне</a>
+                <a href="tel:+79283332645" class="btn">Перезвоните мне</a>
             </div>
         </div>
     </header>
@@ -80,7 +81,7 @@
             </div>
         </section>
 
-        <section class="our-route">
+        <section class="our-route" id="route">
             <div class="wrapper">
                 <h2 class="section-name-text">Наши маршруты</h2>
                 <div class="route-flex">
@@ -327,7 +328,7 @@
         </section>
 
         <section class="question-section">
-            <div class="wrapper">
+            <div class="wrapper" id="question">
                 <h2 class="section-name-text">Вопросы-ответы</h2>
                 <div class="question-flex">
                     <div class="question-left-side">
@@ -360,7 +361,7 @@
         </section>
 
         <section class="contacts">
-            <div class="wrapper">
+            <div class="wrapper" id="contacts">
                 <h2 class="section-name-text">Контакты</h2>
                 <div class="contacts-flex">
                     <picture class="map-img">
@@ -397,14 +398,14 @@
         <div class="wrapper">
             <hr>
             <div class="footer-section">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/logo.png" alt="На главную">
                 </a>
                 <ul class="footer-list">
-                    <li><a href="#">МАРШРУТЫ</a></li>
+                    <li><a href="#route">МАРШРУТЫ</a></li>
                     <li><a href="#">ГАЛЕРЕЯ</a></li>
-                    <li><a href="#">ВОПРОС-ОТВЕТ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#question">ВОПРОС-ОТВЕТ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
                     <li><a href="#">УСЛОВИЯ</a></li>
                     <li><a href="#">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
                 </ul>

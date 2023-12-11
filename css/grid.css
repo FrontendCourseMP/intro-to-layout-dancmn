@@ -48,6 +48,22 @@
     --our-route-color: #F4F4F4;
 }
 
+header {
+  position: relative;
+}
+
+.navbar > a {
+  color: black;
+}
+
+.phone > a {
+  color: black;
+}
+
+.header-right > .btn {
+  background-color: gray;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
@@ -222,4 +238,19 @@ body {
 }
 
 .center {
+  display: grid;
+  place-items: center;
+  grid-template-areas: 'link';
+}
+
+.center > img {
+  grid-area: link;
+}
+
+.center > a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px 15px;
+  grid-area: link;
 }

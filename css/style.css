@@ -789,6 +789,18 @@ footer hr {
   background-color: var(--additional-color);
 }
 
+.navbar a:hover {
+  color: var(--design-color);
+}
+
+.header-right .btn:hover {
+  text-decoration: underline;
+}
+
+.footer-list li > a:hover {
+  color: var(--design-color);
+}
+
 @media (max-width: 767px) {
   .header-right {
     display: none;

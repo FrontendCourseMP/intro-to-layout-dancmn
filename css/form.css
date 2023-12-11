@@ -1,0 +1,24 @@
+html, body { 
+    height: 100%;
+}
+
+header {
+    position: relative;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.navbar > a {
+    color: black;
+}
+
+.phone > a {
+    color: black;
+}
+
+.header-right > .btn {
+    background-color: gray;
+}
