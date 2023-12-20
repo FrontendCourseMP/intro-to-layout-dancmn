@@ -1,3 +1,12 @@
+:root {
+    font-size: 62.5%;
+    --main-color: #121214;
+    --design-color: #037E8C;
+    --additional-color: white;
+    --bottom-text-color: #787878;
+    --our-route-color: #F4F4F4;
+}
+
 html, body { 
     height: 100%;
 }
@@ -21,4 +30,108 @@ body > footer {
 
 .header-right > .btn {
     background-color: gray;
+}
+
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form li {
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 5px 10px;
+}
+
+.time > input {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+form > p {
+    margin-left: 0;
+    color: gray;
+}
+
+.reset {
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    background-color: transparent;
+}
+
+.submit {
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--design-color);
+}
+
+.footer-section > a > img {
+    rotate: 30deg;
+    scale: 150%;
+    transform: skew(10deg, 10deg);
+}
+
+::placeholder {
+    color: lightgrey;
+    font-weight: 500;
+}
+
+li:focus-within > label:first-of-type {
+    color: var(--design-color);
+}
+
+input[type="checkbox"]:checked + label {
+    color: var(--design-color);
+}
+
+input[type="radio"]:checked + label {
+    color: var(--design-color);
+}
+
+input:required {
+    border: 1px solid #ff0000;
+}
+
+dd::before {
+    content: "🛈"; /* Псевдоэлемент для определения */
+    margin-right: 4px;
+}
+
+dt::first-letter {
+    font-size: 2.8rem;
+    color: red;
+    font-weight: 700;
+}
+
+input:checked + label {
+    text-decoration: line-through;
+}
+
+ul li:nth-child(even) > label {
+    text-decoration: underline;
 }

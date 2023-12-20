@@ -35,52 +35,133 @@
             </div>
         </div>
     </header>
+
     <main>
+
+    <div class="wrapper">
+            <form action="//httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Личная информация</legend>
+                    <ul>
+                        <li class="name">
+                            <label for="name">Имя *</label>
+                            <br>
+                            <input type="text" id="name" name="name" required>
+                        </li>
+                        <li class="birthday">
+                            <label for="birthdate">Дата рождения *</label>
+                            <br>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                        </li>
+                        <li class="gender">
+                            <label>Пол</label>
+                            <br>
+                            <input type="radio" id="male" name="gender" value="male"> <label for="male">Мужской</label>
+                            <input type="radio" id="female" name="gender" value="female"> <label for="female">Женский</label>
+                        </li>
+                        <li class="password">
+                            <label for="password">Пароль *</label>
+                            <br>
+                            <input type="password" id="password" name="password" required>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактные данные</legend>
+                    <ul>
+                        <li class="mail">
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" id="email" name="email">
+                        </li>
+                        <li class="tel">
+                            <label for="phone">Телефон *</label>
+                            <br>
+                            <input type="tel" id="phone" name="phone" placeholder="8 (485) 473-78-95" required>
+                        </li>
+                        <li class="time">
+                            <label>Удобное время для связи</label>
+                            <br>
+                            <input type="checkbox" name="contact_time[]" value="morning"> <label>Утро</label>
+                            <input type="checkbox" name="contact_time[]" value="day"> <label>День</label>
+                            <input type="checkbox" name="contact_time[]" value="evening"> <label>Вечер</label>
+                            <input type="checkbox" name="contact_time[]" value="night"> <label>Ночь</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>* — Обязательные для заполнения поля</p>
+                <input type="reset" value="Сбросить" class="reset">
+                <input type="submit" value="Отправить" class="submit">
+            </form>
+    </div>
+
+    <div class="wrapper">
         <form action="//httpbin.org/post" method="post">
-            <fieldset>
-                <legend>Личная информация</legend>
-                <ul>
-                    <li>
-                        <label for="name">Имя</label>
-                        <input type="text" id="name" name="user_name" placeholder="Иван Иванов">
-                    </li>
-                    <li>
-                        <label for="birthday">Дата рождения</label>
-                        <input type="date" id="birthday" name="user_birthday">
-                    </li>
-                    <li>
-                        <label for="">Пол</label>
-                        <input type="radio" name="user_gen" value="Man"> Муж
-                        <input type="radio" name="user_gen" value="Woman"> Жен
-                    </li>
-                    <li>
-                        <label for="password">Пароль</label>
-                        <input type="password" name="password" id="password" placeholder="Пароль">
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Контактные данные</legend>
-                <ul>
-                    <li>
-                        <label for="mail">Email</label>
-                        <input type="email" name="user_mail" id="mail" placeholder="ivanov@mail.ru">
-                    </li>
-                    <li>
-                        <label for="phone">Телефон</label>
-                        <input type="tel" name="user_tel" id="phone" placeholder="+7 (999) 999-99-99">
-                    </li>
-                    <li>
-                        <label for="">Удобное время для связи</label>
-                        <input type="checkbox" name="checked" value="Утро"> Утро
-                        <input type="checkbox" name="checked" value="День"> День
-                        <input type="checkbox" name="checked" value="Вечер"> Вечер
-                        <input type="checkbox" name="checked" value="Ночь"> Ночь
-                    </li>
-                </ul>
-            </fieldset>
+            <dl>
+                <dt>Псевдоэлемент</dt>
+                <dd>Псевдоэлемент — это ключевое слово в CSS, которое представляет часть документа, обычно не представленную в дереве DOM. Например, ::before и ::after.</dd>
+            </dl>
+
+            <legend>Псевдоэлементы</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="pseudo-element1" name="pseudo-elements[]" value="before" checked>
+                    <label for="pseudo-element1">::before</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-element2" name="pseudo-elements[]" value="after">
+                    <label for="pseudo-element2">::after</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-element3" name="pseudo-elements[]" value="first-line">
+                    <label for="pseudo-element3">::first-line</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-element4" name="pseudo-elements[]" value="first-letter" checked>
+                    <label for="pseudo-element4">::first-letter</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-element5" name="pseudo-elements[]" value="before2">
+                    <label for="pseudo-element5">::marker</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-element6" name="pseudo-elements[]" value="after2">
+                    <label for="pseudo-element6">::cue</label>
+                </li>
+            </ul>
+    
+            <legend>Псевдоклассы</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="pseudo-class1" name="pseudo-classes[]" value="hover" checked>
+                    <label for="pseudo-class1">:hover</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-class2" name="pseudo-classes[]" value="active" checked>
+                    <label for="pseudo-class2">:active</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-class3" name="pseudo-classes[]" value="focus" checked>
+                    <label for="pseudo-class3">:focus</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-class4" name="pseudo-classes[]" value="nth-child">
+                    <label for="pseudo-class4">:nth-child</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-class5" name="pseudo-classes[]" value="not">
+                    <label for="pseudo-class5">:not</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pseudo-class6" name="pseudo-classes[]" value="nth-of-type" checked>
+                    <label for="pseudo-class6">:nth-of-type</label>
+                </li>
+            </ul> 
         </form>
+    </div>
+
     </main>
+
     <footer>
         <div class="wrapper">
             <hr>

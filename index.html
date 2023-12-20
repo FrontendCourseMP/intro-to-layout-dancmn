@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="popup.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
+            <a class="skip-link" href="#main">
+                Перейти к контенту
+            </a>
             <a href="index.html">
                 <picture>
                     <source media="(min-width: 768px)" srcset="img/logo-big.png">
                     <img src="img/logo.png" alt="На главную">
                 </picture>
             </a>
-            <button type="button"><img src="img/burger-icon.svg" alt=""></button>
+            <button type="button"><img src="img/burger-icon.svg" alt=""><span class="sr-only">Раскрывающееся меню</span></button>
             <div class="header-right">
                 <nav class="navbar">
                     <a href="#route">МАРШРУТЫ</a>
@@ -25,6 +29,8 @@
                     <a href="#contacts">КОНТАКТЫ</a>
                     <a href="#">ЗАБРОНИРОВАТЬ</a>
                     <a href="form.html">ФОРМА</a>
+                    <a href="grid.html">Grid HTML</a>
+                    <a href="demo.html">Demo HTML</a>
                 </nav>
                 <div class="phone">
                     <img src="img/phone.svg" alt="">
@@ -37,7 +43,7 @@
     <main>
         <h1 class="sr-only">CF Moto - туры на квадроциклах</h1>
 
-        <section class="main-section">
+        <section class="main-section" id="main">
             <div class="wrapper">
                 <h2>Слайдер маршрутов</h2>
                 <p class="scroll-text">Экскурсии на квадроциклах в Геленджике</p>
@@ -98,20 +104,21 @@
                             <a href="#" class="button-link">Подробнее</a>
                             <button type="button" class="btn">Забронировать</button>
                         </div>
+
                     </div>
                     <div class="route-right-side">
                         <div class="img-wrap">
                             <picture class="route-img">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-1-big.png" class="route-img">
-                                <img src="img/route-img-1.jpg" alt="" class="route-img">
+                                <img src="img/route-img-1.jpg" alt="Квадроцикл" class="route-img">
                             </picture>
                             <picture class="route-img2">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-2-big.png" class="route-img2">
-                                <img src="img/route-img-2.jpg" alt="" class="route-img2">
+                                <img src="img/route-img-2.jpg" alt="Квадроцикл" class="route-img2">
                             </picture>
                             <picture class="route-img2">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-3-big.png" class="route-img2">
-                                <img src="img/route-img-3.jpg" alt="" class="route-img2">
+                                <img src="img/route-img-3.jpg" alt="Квадроцикл" class="route-img2">
                             </picture>
                         </div>
                         <div class="scroll-group">
@@ -142,15 +149,15 @@
                         <div class="img-wrap">
                             <picture class="route-img">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-4-big.png" class="route-img">
-                                <img src="img/route-img-4.jpg" alt="" class="route-img">
+                                <img src="img/route-img-4.jpg" alt="Квадроцикл" class="route-img">
                             </picture>
                             <picture class="route-img2">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-5-big.png" class="route-img2">
-                                <img src="img/route-img-5.jpg" alt="" class="route-img2">
+                                <img src="img/route-img-5.jpg" alt="Квадроцикл" class="route-img2">
                             </picture>
                             <picture class="route-img2">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-6-big.png" class="route-img2">
-                                <img src="img/route-img-6.jpg" alt="" class="route-img2">
+                                <img src="img/route-img-6.jpg" alt="Квадроцикл" class="route-img2">
                             </picture>
                         </div>
                         <div class="scroll-group">
@@ -181,15 +188,15 @@
                         <div class="img-wrap">
                             <picture class="route-img">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-7-big.png" class="route-img">
-                                <img src="img/route-img-7.jpg" alt="" class="route-img">
+                                <img src="img/route-img-7.jpg" alt="Квадроцикл" class="route-img">
                             </picture>
                             <picture class="route-img2">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-8-big.png" class="route-img2">
-                                <img src="img/route-img-8.jpg" alt="" class="route-img2">
+                                <img src="img/route-img-8.jpg" alt="Квадроцикл" class="route-img2">
                             </picture>
                             <picture class="route-img2">
                                 <source media="(min-width: 1024px)" srcset="img/route-img-9-big.png" class="route-img2">
-                                <img src="img/route-img-9.jpg" alt="" class="route-img2">
+                                <img src="img/route-img-9.jpg" alt="Квадроцикл" class="route-img2">
                             </picture>
                         </div>
                         <div class="scroll-group">
@@ -207,7 +214,7 @@
         <div class="route-test wrapper">
             <h2 class="section-name-text">Затрудняетесь выбрать маршрут?</h2>
             <p class="big-add-text">Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию</p>
-            <a href="#" class="inversion-button">Начать тест</a>
+            <a href="#" class="inversion-button btn">Начать тест</a>
         </div>
 
         <section class="our-team">
@@ -217,7 +224,7 @@
                     <div class="team-card">
                         <picture class="card-img">
                             <source media="(min-width: 1440px)" srcset="img/team-img-1-big.png" class="card-img">
-                            <img src="img/team-img-1.jpg" alt="" class="card-img">
+                            <img src="img/team-img-1.jpg" alt="Член команды" class="card-img">
                         </picture>
                         <p class="team-names">Юлиана</p>
                         <p class="small-add-text">руководитель</p>
@@ -225,7 +232,7 @@
                     <div class="team-card">
                         <picture class="card-img">
                             <source media="(min-width: 1440px)" srcset="img/team-img-2-big.png" class="card-img">
-                            <img src="img/team-img-2.jpg" alt="" class="card-img">
+                            <img src="img/team-img-2.jpg" alt="Член команды" class="card-img">
                         </picture>
                         <p class="team-names">Максим</p>
                         <p class="small-add-text">старший инструктор</p>
@@ -233,7 +240,7 @@
                     <div class="team-card">
                         <picture class="card-img">
                             <source media="(min-width: 1440px)" srcset="img/team-img-3-big.png" class="card-img">
-                            <img src="img/team-img-3.jpg" alt="" class="card-img">
+                            <img src="img/team-img-3.jpg" alt="Член команды" class="card-img">
                         </picture>
                         <p class="team-names">Кристина</p>
                         <p class="small-add-text">администратор</p>
@@ -241,7 +248,7 @@
                     <div class="team-card">
                         <picture class="card-img">
                             <source media="(min-width: 1440px)" srcset="img/team-img-4-big.png" class="card-img">
-                            <img src="img/team-img-4.jpg" alt="" class="card-img">
+                            <img src="img/team-img-4.jpg" alt="Член команды" class="card-img">
                         </picture>
                         <p class="team-names">Юрий</p>
                         <p class="small-add-text">старший механик</p>
@@ -353,7 +360,7 @@
                         <img src="img/question-icon.svg" alt="">
                         <h3 class="have-question">Есть вопросы?</h3>
                         <p class="small-add-text">Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы, предложения или идеи для сотрудничества</p>
-                        <a href="#" class="inversion-button">Задать вопрос</a>
+                        <a href="#" class="inversion-button btn">Задать вопрос</a>
                     </div>
                 </div>
                 <hr>
@@ -412,7 +419,6 @@
             </div>
             <hr>
             <p class="footer-text">© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</p>
-            <a href="grid.html">Grid HTML</a>
         </div>
     </footer>
 </body>

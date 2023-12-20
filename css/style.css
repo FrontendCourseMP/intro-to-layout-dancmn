@@ -46,6 +46,34 @@
     --additional-color: white;
     --bottom-text-color: #787878;
     --our-route-color: #F4F4F4;
+    --active-button: #0097A8;
+}
+
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 10px 15px;
+  color: var(--main-color);
+  background: var(--active-button);
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(20%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 body {
@@ -526,6 +554,7 @@ span {
 .bg-img {
   position: absolute;
   top: 200px;
+  z-index: -1;
 }
 
 .discount-container {
@@ -789,6 +818,10 @@ footer hr {
   background-color: var(--additional-color);
 }
 
+a, .btn {
+  transition: 150ms ease-in-out;
+}
+
 .navbar a:hover {
   color: var(--design-color);
 }
@@ -799,6 +832,27 @@ footer hr {
 
 .footer-list li > a:hover {
   color: var(--design-color);
+}
+
+
+.btn:active,
+.btn:focus {
+  scale: 95%;
+}
+
+.btn:hover {
+  background-color: var(--active-button);
+}
+
+.button-link:active,
+.button-link:focus {
+  scale: 95%;
+}
+
+.button-link:hover {
+  border: none;
+  color: var(--additional-color);
+  background-color: var(--design-color);
 }
 
 @media (max-width: 767px) {
@@ -1291,4 +1345,9 @@ footer hr {
   .footer-section a {
     margin-left: 50px;
   }
+}
+
+::selection {
+  background-color: var(--design-color);
+  color: var(--additional-color);
 }
